@@ -185,7 +185,7 @@ header {
 @media (max-width: 500px) {
   header {
     display: flex;
-    background-color: red;
+    flex-direction: column;
   }
 }
 header h1,
@@ -196,11 +196,24 @@ header h1 {
   width: 40%;
   margin-left: 10%;
 }
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-evenly;
   width: 40%;
   margin-right: 10%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
 }
 header nav a {
   color: black;
@@ -222,12 +235,6 @@ header nav a {
 .home .main-section {
   padding-bottom: 2%;
   border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  .home .main-section {
-    display: flex;
-    background-color: red;
-  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -262,7 +269,7 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.home img {
   border-radius: 10px;
 }
 .home .content-pick {
